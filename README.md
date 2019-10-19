@@ -14,3 +14,7 @@ npm start;
 
 ## Why? 
 this project was created to add ngx admin to an existing application instead of using it as a starter project 🐉
+
+## Angular info for other developers
+Scaffolding feature-modules with scaffolded components:
+<br/>https://angular.io/guide/feature-modules
