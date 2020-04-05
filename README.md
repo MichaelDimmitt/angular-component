@@ -12,6 +12,9 @@ npm install;
 npm start;
 ```
 
+## Example Scaffold:
+ng g component customer-dashboard/components/smart-list
+
 ## Why? 
 this project was created to add ngx admin to an existing application instead of using it as a starter project 🐉
 

@@ -1,0 +1,31 @@
+<!--https://github.com/angular/angular/issues/22972#issuecomment-407358396-->
+<ng-template #content><ng-content></ng-content></ng-template>
+<ng-template #element1 let-list>
+  <ul >
+    <li *ngFor="let direction of list; let i = index;">
+      {{direction}}
+    </li>
+  </ul>
+</ng-template>
+
+<ng-template #element2 let-name>
+  <br/>
+  {{name}}
+  <hr/>
+</ng-template>
+
+<ng-container *ngIf="deeplyNestedData">
+  <ng-container *ngFor="let item of deeplyNestedData; let i = index;">
+    <ng-container *ngTemplateOutlet="element2; context: {$implicit: 'item divider'}"></ng-container>
+    <ng-container *ngFor="let object of item | keyvalue; let i = index;">
+      {{object.key}}
+      <ng-container
+        *ngTemplateOutlet="element1; context: {$implicit: object.value}"
+      ></ng-container>
+    </ng-container>
+  </ng-container>
+
+  <div *ngIf="flag">
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+</ng-container>

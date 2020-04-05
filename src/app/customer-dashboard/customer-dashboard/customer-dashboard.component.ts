@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerDashboardComponent implements OnInit {
 
-  deepylyNested = [
+  deeplyNestedData = [
     {
       directions: [
         'north',
@@ -35,6 +35,8 @@ export class CustomerDashboardComponent implements OnInit {
       ]
     }
   ]
+
+  flag=true
 
   constructor() { }
 
