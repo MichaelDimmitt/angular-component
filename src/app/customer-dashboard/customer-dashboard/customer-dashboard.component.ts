@@ -7,11 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerDashboardComponent implements OnInit {
 
-  listDirections = [
-    'north',
-    'south',
-    'east',
-    'west'
+  deepylyNested = [
+    {
+      directions: [
+        'north',
+        'south',
+        'east',
+        'west'
+      ],
+      products: [
+        'wrench',
+        'hammer',
+        'screwdriver'
+      ]
+    },
+    {
+      directions: [
+        'west',
+        'east',
+        'south',
+        'north'
+      ],
+      products: [
+        'screwdriver',
+        'hammer',
+        'wrench',
+      ]
+    }
   ]
 
   constructor() { }

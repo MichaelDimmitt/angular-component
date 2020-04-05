@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'converting-ngx-admin-to-ancular-cli-scaffold';
+  title = 'angular component advanced';
 }
