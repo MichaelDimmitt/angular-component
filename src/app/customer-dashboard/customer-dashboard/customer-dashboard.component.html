@@ -1,1 +1,12 @@
-<p>customer-dashboard works!</p>
+<ng-template #element1 let-list>
+  <ul >
+    <li *ngFor="let direction of list; let i = index;">
+      {{direction}}
+    </li>
+  </ul>
+</ng-template>
+
+<ng-container 
+  *ngTemplateOutlet="element1; context: {$implicit: listDirections}"
+></ng-container>
+

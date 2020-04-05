@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerDashboardComponent implements OnInit {
 
+  listDirections = [
+    'north',
+    'south',
+    'east',
+    'west'
+  ]
+
   constructor() { }
 
   ngOnInit() {
