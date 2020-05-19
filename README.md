@@ -1,8 +1,15 @@
+## Two Advanced Angular Components
+```
+1. ngTemplateOutlet - ( ng-template and ng-container )
+   a) store variables in the template.
+   b) reuse html without creating a new component.
+   c) ng-container … to add additional ngFor’s or ngIf’s
 
 
-# ConvertingNgxAdminToAncularCliScaffold
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
+2. Decorator Component
+   a) uses ngTemplateOutlet to render <content/>.
+   b) parent component -> middle decorator component -> child component.
+``` 
 
 ## Installation:
 ```bash
@@ -21,3 +28,7 @@ this project was created to add ngx admin to an existing application instead of 
 ## Angular info for other developers
 Scaffolding feature-modules with scaffolded components:
 <br/>https://angular.io/guide/feature-modules
+
+
+Link to presentation: 
+https://docs.google.com/presentation/d/1ah6nrLpweDtLrvf5WlfnCpTABo0eV2YQEn1HcVzUcOo/edit?usp=sharing
